@@ -10,12 +10,12 @@ make_deb() {
 	echo "Creating deb package..."
 	build_dir=$(mktemp -d)
 	mkdir ${build_dir}/DEBIAN
-    cp debian/control ${build_dir}/DEBIAN/
-    cp debian/postinst ${build_dir}/DEBIAN/
-    cp debian/postrm ${build_dir}/DEBIAN/
+	cp debian/control ${build_dir}/DEBIAN/
+	cp debian/postinst ${build_dir}/DEBIAN/
+	cp debian/postrm ${build_dir}/DEBIAN/
 	cp -r etc ${build_dir}
-    chmod 755 ${build_dir}/DEBIAN/postinst
-    chmod 755 ${build_dir}/DEBIAN/postrm
+	chmod 755 ${build_dir}/DEBIAN/postinst
+	chmod 755 ${build_dir}/DEBIAN/postrm
 
 	get_version
 	sed -i "s/VERSION/${version}/" ${build_dir}/DEBIAN/control
