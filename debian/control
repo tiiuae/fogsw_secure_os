@@ -1,0 +1,9 @@
+Package: fogsw-secure-os
+Version: VERSION
+Maintainer: Manuel Segarra-Abad <manuel.segarra-abad@unikie.com>
+Architecture: all
+Depends: amd64-microcode, grub-common, grub-gfxpayload-lists, grub-pc,
+ grub-pc-bin, grub2-common, intel-microcode, iucode-tool
+Description: Enhances Linux security
+ Configures some parts of Linux OS (Ubuntu) in order to enhance
+ the security of the system.
