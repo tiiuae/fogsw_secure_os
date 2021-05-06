@@ -9,3 +9,7 @@ In the file there are short explanations of the settings.
 The command line parameters are set via `/etc/deafult/grub.d/40-secure-os.cfg`.
 In the file there are short explanations of the boot parameter and what is tried to get with them.<br>
 Note that some of the boot parameters require a specific configuration of the Linux kernel.
+
+# Packaging
+In order to generate a debian package with the contents of this repo, run the script: package.sh.<br>
+Another way is to use the [fogsw-ci-scripts](https://github.com/tiiuae/fogsw-ci-scripts).
